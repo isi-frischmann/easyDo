@@ -4,5 +4,7 @@ You can delete, edit and create new Tasks including validations.
 
 Login and Registration with Validation
 
+![GitHub Logo](/Video/login.gif)
+
 <img scr="/Video/login.gif">
 (/Video/registration.gif)
