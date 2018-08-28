@@ -5,7 +5,6 @@ You can delete, edit and create new Tasks including validations.
 Login and Registration with validation
 
 ![GitHub Logo](/Video/login.gif)
-![GitHub Logo](/Video/registration.gif)
 
 User are able to create there own tasks also with validation and date validation
 ![GitHub Logo](/Video/create.gif)
