@@ -1,0 +1,78 @@
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+<div class="container-fluid">
+
+  <div class="header">
+
+    <div class="logo">
+      <div class="icon">
+        <img click="getAll()" src="/assets/icon.png" width="75px">
+        <div class="icon_text">easy<b>DO</b></div>
+
+        <button (click)="logout(userId)" class="logout">Logout</button>
+      </div>
+      <br>
+    </div>
+
+    <div class="bg">
+      <img src="/assets/bg.png" width="500px">
+    </div>
+
+      <div class="navigation">
+        <p>All your Tasks</p>
+
+        <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Action</th> 
+              <th scope="col">Task</th> 
+              <th scope="col">Description</th> 
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+      
+          <tbody *ngFor="let task of tasks">
+            <tr>
+                <td>
+                    <a (click)="deleteTask(task._id)">
+                      <i class="fa fa-check-square-o" style="font-size:24px"></i>
+                    </a> &nbsp;
+                    <a (click)="onEdit(task)">
+                      <i class="fa fa-edit" style="font-size:24px"></i></a>
+                  </td>
+              <td>{{task.task}}</td> 
+              <td>{{task.description}}</td> 
+              <td>{{task.date}} </td>
+              
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Nested component -->
+        <app-edit-task *ngIf="editTask" (savedTask)="getAll()" [(editTask)]="editTask"></app-edit-task><br>
+
+              <!-- Nested routing - Create a new task -->
+          <div class="createNewTask">
+            <button routerLink='/task/new'>Add Task</button>
+            <router-outlet></router-outlet>
+          </div>
+      </div>
+      </div>
+      
+      <hr>
+      <footer class="container-fluid">
+        <div class="icon_text_bottom">easy<b>DO</b></div>
+        <div class="footer">
+            <a href="#">How it works</a> |
+            <a href="#">About us</a> |
+            <a href="#">Contact us</a>
+        </div>
+      </footer>
+  </div> 
+</div>
+</body>

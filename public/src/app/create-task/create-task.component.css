@@ -1,0 +1,89 @@
+body {
+    font-size: 16px;
+}
+ 
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {height: 1500px}
+ 
+/* Set gray background color and 100% height */
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+ 
+/* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+
+
+.header {
+    height: 580px;
+    background: linear-gradient(to bottom right, #A3CEDF, #B9CAD2);
+    padding: 0px;
+}
+ 
+.container-fluid {
+    padding: 0px;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+.icon_text {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: white;
+    vertical-align: middle;
+}
+
+.bg {
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    right: 0px;
+}
+
+.navigation {
+    position: relative;
+    top: -40px;
+    left: 400px;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.createNewTask {
+    color: #333;
+    font-size: 16px;
+}
+
+.logout {
+    margin-left: 650px;
+}
+
+.form {
+    text-align: center
+}
+
+.h1{
+    text-align: center;
+}
+

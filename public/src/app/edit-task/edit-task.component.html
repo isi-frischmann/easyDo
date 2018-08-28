@@ -1,0 +1,19 @@
+<div class="edit" *ngIf="editTask">
+
+  <h3> Edit the Task {{editTask.task}} </h3>
+
+  <form (submit)="updateTask(editTask)">
+      <p>Task:</p>
+
+     
+      <input type="text" name="editTask.task" required minlength="4" placeholder="{{editTask.task}}h" [(ngModel)]="updatedTask.task" #task="ngModel"><br>
+      <p>Description:</p>
+      <input type="text" name="editTask.description" required minlength="4" placeholder="{{editTask.description}}" [(ngModel)]="updatedTask.description" #description="ngModel"><br>
+      <p>Date:</p>
+      <input type="date" name="editTask.date" placeholder="{{editTask.date}}" [(ngModel)]="updatedTask.date"><br>
+  
+      <input type="submit" value="Submit">
+      
+    </form>
+
+</div>

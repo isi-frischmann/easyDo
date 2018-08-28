@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create new Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <style>
+        .wrapper {
+            margin: 20px;
+        }
+
+        .header {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <h1>Create a new Task</h1>
+        </div>
+        <br>
+
+
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Title">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Description">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class='col-sm-6'>
+                    <p>Date to be done</p>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>📆
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputState">Priority</label>
+                    <select id="inputState" class="form-control">
+                        <option>high</option>
+                        <option>middle</option>
+                        <option>low</option>
+                    </select>
+
+                        <p> ➕ Add a Friend</p>
+                    <button type="submit" class="btn btn-dark">Create</button>
+                </div>
+        </form>
+</body>
+
+</html>

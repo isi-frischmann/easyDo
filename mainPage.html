@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <style>
+        .wrapper {
+            margin: 20px;
+        }
+
+        .header {
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .todo {
+            margin-left: 50px;
+        }
+
+        .headerToDo {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <h1>Your ToDo List</h1>
+        </div>
+        <div class="row">
+
+            <div class="menu col-sm-4">
+
+                <button type="button" class="btn btn-default btn-sm">
+                    <span> 📨 </span> MESSAGES
+                </button>
+
+                <hr>
+
+                <button type="button" class="btn btn-default btn-sm">
+                    <span>📝 </span>ALL ToDo's
+                </button>
+
+                <hr>
+
+                <div class="privateList">
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-folder-open">📂</span> Private List's
+                    </button>
+                    <br>
+
+                    <div class="toDo">
+                        <p>☑️ Grocery</p>
+                        <p>☑️ Laundry</p>
+                        <p>☑️ Book flights</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="sharedList">
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-folder-open">📂</span> Shared List's
+                    </button>
+                    <br>
+
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span> ➕ </span> Create a new List
+                    </button>
+                </div>
+            </div>
+
+            <div class=" allTasks col-sm-8">
+                <div class="row">
+                    <div class=" col headerToDo">
+                        <h2>To Do's</h2>
+                    </div>
+                    <div class="col">
+                        <span> 🗑 Filter by Priority </span> |
+                        <span> 🗑 Filter by Date </span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col">
+                        <h5> Grocery List </h5>
+
+                        <table class="table">
+
+                            <tbody>
+                                <tr>
+                                    <td>🔘 Potatos</td>
+                                    <td> Date or Priority 📆 | high - middle - low </td>
+                                </tr>
+                                <tr>
+                                    <td>🔘 washing powder</td>
+                                    <td> Date or Priority 📆 | high - middle - low </td>
+                                </tr>
+                                <tr>
+                                    <td>🔘 Buy potatos</td>
+                                    <td> Date or Priority 📆 | high - middle - low </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

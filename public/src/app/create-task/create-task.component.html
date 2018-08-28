@@ -1,0 +1,61 @@
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="header">
+
+      <div class="logo">
+        <div class="icon">
+          <img click="getAll()" src="/assets/icon.png" width="75px">
+          <div class="icon_text">easy
+            <b>DO</b>
+          </div>
+
+          <button (click)="logout(userId)" class="logout">Logout</button>
+        </div>
+        <br>
+      </div>
+
+      <div class="bg">
+        <img src="/assets/bg.png" width="500px">
+      </div>
+
+
+      <div class="navigation">
+        <h1>Create a new Task here </h1>
+      </div>
+
+      <form class="form" (submit)="addTask()">
+
+        <p>Task:</p>
+        <input type="text" name="task" required minlength="3" [(ngModel)]="newTask.task" #task="ngModel">
+        <br>
+        <!-- {{task.valid | json}} -->
+        <div *ngIf="!task.valid"> Task needs to have at least three characters </div>
+        <br>
+
+        <p>Description:</p>
+        <input type="text" name="desc" required minlength="0" [(ngModel)]="newTask.desc" #desc="ngModel">
+        <br>
+        <div *ngIf="!desc.valid"> Descripiton is not required</div>
+        <br>
+
+        <p>Date:</p>
+        <input type="date" name="date" required [(ngModel)]="newTask.date" #date="ngModel">
+        <br>
+        <div *ngIf="!date.valid"> Date can't be in the past</div>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+
+    </div>
+  </div>
+</body>

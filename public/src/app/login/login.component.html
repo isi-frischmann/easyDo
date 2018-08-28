@@ -1,0 +1,36 @@
+<div class="container-fluid">
+
+  <div class="header">
+
+    <div class="logo">
+      <div class="icon">
+        <img src="/assets/icon.png" width="75px">
+        <div class="icon_text">easy<b>DO</b>
+
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div class="bg">
+      <img src="/assets/bg.png" width="500px">
+    </div>
+
+    <form (submit)="loginSubmit(userCredentials)">
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label>Email</label>
+          <input type="email" name="email" [(ngModel)]="userCredentials.email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          <input type="password" name="password" [(ngModel)]="userCredentials.password" class="form-control" placeholder="Password">
+        </div>
+      </div>
+
+      <button id="login" type="submit">Login</button>
+    </form>
+  </div>
+
+</div>
