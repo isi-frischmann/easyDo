@@ -15,6 +15,5 @@ When the ask is created the User can edit there specific Task
 ![GitHub Logo](/Video/edit.gif)
 
 After the task is done the User can delete the specific Task
-
-
+![GitHub Logo](/Video/done.gif)
 
