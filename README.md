@@ -1,4 +1,4 @@
-# easyDO is an app where you can create Tasks for your daily ToDo's.
+# easyDo is an app where you can create Tasks for your daily ToDo's.
 You have to login or register to create your own account. 
 You can delete, edit and create new Tasks including validations.
 
